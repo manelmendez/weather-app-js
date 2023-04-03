@@ -5,13 +5,14 @@ export default defineConfig ({
   server: {
     host: true,
     port: 5004,
+  },
+  preview: {
+    host: true,
+    port: 5005,
     hmr: {
       host: 'localhost',
       protocol: 'wss',
       clientPort: 443
     }
-  },
-  preview: {
-    port: 5005
   }
 })

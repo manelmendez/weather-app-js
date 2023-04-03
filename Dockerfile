@@ -13,4 +13,4 @@ RUN npm install && npm run build
 WORKDIR /projects/weather-app-js
 
 EXPOSE 5004
-CMD [ "npm", "run", "serve" ]
+CMD [ "npm", "run", "preview" ]
