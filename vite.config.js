@@ -1,7 +1,8 @@
 // solo lo he creado para cambiar el puerto
 import { defineConfig } from "vite";
 
-export default defineConfig ({
+export default defineConfig({
+  base: './',
   server: {
     host: true,
     port: 5004,
