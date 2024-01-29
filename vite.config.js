@@ -2,7 +2,7 @@
 import { defineConfig } from "vite";
 
 export default defineConfig({
-  base: './',
+  base: '/weather-app-js/',
   server: {
     host: true,
     port: 5004,
