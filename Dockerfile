@@ -17,7 +17,7 @@ RUN npm install && npm run build
 FROM nginx:alpine
 
 # Copiar el archivo de configuración de Nginx
-# COPY --from=build /projects/weather-app-js/nginx.conf /etc/nginx/nginx.conf
+COPY --from=build /projects/weather-app-js/nginx.conf /etc/nginx/nginx.conf
 
 # Copia los archivos construidos al directorio de Nginx
 COPY --from=build /projects/weather-app-js/dist /usr/share/nginx/html
