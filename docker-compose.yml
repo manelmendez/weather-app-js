@@ -1,11 +1,11 @@
 version: '3.8'
 
 services:
-  wheather-app:
+  weather-app:
     build: 
       context: .
       dockerfile: Dockerfile
-    container_name: "wheather-app"
+    container_name: "weather-app"
     restart: always
     stdin_open: true
     tty: true
