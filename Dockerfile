@@ -1,4 +1,4 @@
-FROM node:23-alpine
+FROM node:23-alpine AS build
 
 # set work directory on Docker
 WORKDIR /projects/weather-app-js
